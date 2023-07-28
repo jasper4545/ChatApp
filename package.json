@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/addUser.js",
-    "dev": "nodemon server.js",
+    "dev": "node server.js",
     "client": "nodemon client/client.js",
     "db": "node model/messages.js"
   },
