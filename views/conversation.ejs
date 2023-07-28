@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/convo.css">
+  <link rel="stylesheet" href=
+  "/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
+  <title>User</title>
+ 
+</head>
+<body>
+  <script src="../js/socket.io.js"></script>
+  <input class="receiver" type="hidden" value=<%= receiver %>>
+  <input class="owner" type="hidden" value=<%= owner %>>
+ <div class="wrapper">
+   <div class="header">
+     <i id="back-bar" class="far fa-arrow-alt-circle-left" onclick="back()"></i>
+     <h1> <%= owner %></h1>
+       </div>
+  <div class="inbox">
+    <div id="my-message">
+      <p>hi po</p>
+    </div>
+    <div id="other-message">
+      <p>hellow din</p>
+    </div>
+  </div>
+  
+     <div class="inputs">
+    <input class="message">
+    <button class="btn">send</button>
+          </div>
+      </div>
+  <script src="../js/convo.js"></script>
+</body>
+</html>

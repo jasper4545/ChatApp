@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Test</title>
+  
+  <link rel="stylesheet" href="./css/messages.css">
+<link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <script src="../js/socket.io.js"></script>
+  <div class="wrapper">
+  <input type="hidden" class="owner" value=<%= owner %>>
+    <div class="header">
+       <h1>Messages</h1>
+          </div>
+    <div class="friends">
+   <% messages.forEach((e)=>{ %>
+   <% if(owner !== e.fullname){ %>
+      <div class="friend">
+          <div id="friend-profile"></div>
+          <p><%= e.fullname %></p>
+            </div>
+   <% } %>
+   <% }) %>
+    </div><!-- friends-->
+  <div class="messages">
+   
+    </div>
+  </div>
+  </div><!--wrapper-->
+  <script src="../js/messages.js"></script>
+  <script>
+    const parent = document.querySelector(".friends");
+    for(let i = 0; i < parent.children.length; i++){
+      parent.children[i].onclick = ()=> window.location= "/messages/"+parent.children[i].innerText
+    }
+  </script>
+</body>
+</html>

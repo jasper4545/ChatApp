@@ -1,0 +1,61 @@
+*{
+ 
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  margin:5px;
+}
+
+form{
+  position:fixed;
+  bottom:0%;
+  width: 100%;
+  left:0%;
+  background: #12788f;
+}
+form input{
+  position:relative;
+  line-height: 100%;
+  font-size:1.2rem;
+  width: 80%;
+padding:10px;
+color:white;
+}
+form button{
+  position: relative;
+  right: 0;
+  width:18.5%;
+  height: 50px;
+}
+.chat-room{
+  background:#eee;
+  width: 100%;
+  padding-bottom:20px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+.messages{
+  position: relative;
+  color:white;
+}
+#msg-arrive{
+  display:flex;
+  position:relative;
+  width: 100%;
+  margin-block:5px;
+  font-size: 0.8rem;
+}
+#msg-arrive p{
+  width:max-content;
+  font-size:0.9rem;
+  max-width: 80%;
+  background:#00ccff;
+  padding:15px;
+  border-radius: 15px;
+  margin:5px;
+}
+#joinAlert{
+  color:red;
+}

@@ -1,0 +1,61 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  
+}
+.header{
+  padding-inline: 10px;
+  padding-block:15px;
+  background: #2066a7;
+}
+.header h1{
+  font-size:1.2rem;
+  text-align: center;
+  color:white;
+}
+.friends{
+  display: flex;
+  padding:5px;
+  padding-block:10px;
+  background: #3a3a3a;
+  border-bottom:3px solid #717171;
+}
+.friend{
+  border:1px solid red;
+  width: max-content;
+  color:white;
+  margin-inline:5px;
+}
+.friend p{
+  font-size:0.6rem;
+  text-align: center;
+}
+#friend-profile{
+  margin-inline: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: green;
+}
+.messages{
+  display:block;
+}
+#message{
+  background: #eee;
+  padding-inline:10px;
+  padding-top:10px;
+  padding-bottom:15px;
+  
+}
+#message h1{
+  font-size:1.1rem;
+  margin-bottom:5px;
+  font-weight: 500;
+}
+#message p{
+  font-size:0.8rem;
+  color:#7b7e7e;
+}
